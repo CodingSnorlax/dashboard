@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body class="d-flex">
+
+    <header class="d-flex flex-column justify-content-between bg-light pt-8 pb-8 ps-8 pe-20">
+
+      <nav class="d-flex flex-column">
+
+        <h1 class="logo mb-8">
+          <a href="#">ANSWER</a>
+        </h1>
+
+        <ul class="nav flex-column">
+          <li class="nav-item d-flex align-items-center mb-5">
+            <span class="material-icons">chrome_reader_mode</span>
+            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item d-flex align-items-center mb-5">
+            <span class="material-icons">quiz</span>
+            <a class="nav-link" href="#">Question</a>
+          </li>
+          <li class="nav-item assignment d-flex align-items-center mb-5">
+            <span class="material-icons">assignment</span>
+            <a class="nav-link text-secondary" href="#">Assignment</a>
+          </li>
+          <li class="nav-item d-flex align-items-center mb-5">
+            <span class="material-icons">school</span>
+            <a class="nav-link" href="#">Course</a>
+          </li>
+          <li class="nav-item d-flex align-items-center mb-5">
+            <span class="material-icons">source</span>
+            <a class="nav-link" href="#">Admin</a>
+          </li>
+          <li class="nav-item d-flex align-items-center mb-5">
+            <span class="material-icons">settings</span>
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+
+    </nav>
+
+
+
+      <div class="user d-flex">
+        <img class="d-block me-4" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="user photo">
+        <div class="userName d-flex flex-column">
+          <span>Andy Chen</span>
+          <span class="text-gray fs-7">andy0401@mail.com</span>
+        </div>
+      </div>
+
+    </header>
+
+
+    
+    <%- contents %>
+
+   
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
