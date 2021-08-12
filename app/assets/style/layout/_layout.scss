@@ -1,4 +1,5 @@
 header{
+    max-width: 296px;
     height: 100vh;
 }
 
@@ -18,19 +19,22 @@ header{
 
 }
 
-.assignment{
+// 按鈕的綠線是屬於 hover，所以要寫在 <a> 上面
+// 按鈕內要寫兩個 span，才能推出左右間距
+
+.nav-link{
     position: relative;
 }
 
-.assignment::before{
+.nav-link:hover ::before{
+    content: '';
     position: absolute;
     left: 0;
-    top: 0;
-    content: '';
-    display: inline-block;
-    background-color: #198754;
+    // 要先寫出偽元素空間
     width: 4px;
     height: 32px;
+    // 有空間後，再寫border
+    border-left: 4px solid #198754;
 }
 
 .user{
