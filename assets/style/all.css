@@ -1,4 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap");
+body {
+  font-family: 'Lato', 'Roboto Mono', monospace, sans-serif;
+}
+
+body *, body *::before, body *::after {
+  padding: 0;
+  margin: 0;
+}
+
 header {
+  max-width: 296px;
   height: 100vh;
 }
 
@@ -13,25 +24,35 @@ header {
   white-space: nowrap;
 }
 
-.assignment {
+.nav-link {
   position: relative;
 }
 
-.assignment::before {
+.nav-link:hover ::before {
+  content: '';
   position: absolute;
   left: 0;
-  top: 0;
-  content: '';
-  display: inline-block;
-  background-color: #198754;
   width: 4px;
   height: 32px;
+  border-left: 4px solid #198754;
 }
 
 .user img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
+}
+
+.userPhoto img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+mark {
+  background-color: #F8F9FA;
+  color: #198754;
+  font-family: 'roboto mono';
 }
 
 /*# sourceMappingURL=all.css.map */
